@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز فينيكس سنتر للتدريب والعلوم - الصومعة، البليدة</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
+        body { font-family: 'Cairo', sans-serif; background-color: #0d1b2a; color: #e0e1dd; }
+        
+        .brand-bg-dark { background-color: #0b1724; }
+        .brand-bg-card { background-color: #122236; border: 1px solid rgba(255, 255, 255, 0.08); }
+        .brand-gold { color: #e0a96d; }
+        .brand-gold-bg { background-color: #d4af37; }
+        .brand-gold-border { border-color: #d4af37; }
+    </style>
+</head>
+<body class="antialiased selection:bg-[#d4af37] selection:text-[#0b1724]">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 brand-bg-dark/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <!-- Exact Brand Logo SVG -->
+                <div class="w-12 h-12 bg-[#0b1724] rounded-2xl flex items-center justify-center p-1 border border-[#d4af37]/40 shadow-md">
+                    <svg viewBox="0 0 500 500" class="w-full h-full text-white" fill="currentColor">
+                        <path d="M250,380 C200,360 100,380 60,390 L60,280 C100,270 200,250 250,270 L250,380 Z" fill="#ffffff" opacity="0.95"/>
+                        <path d="M250,380 C300,360 400,380 440,390 L440,280 C400,270 300,250 250,270 L250,380 Z" fill="#ffffff" opacity="0.95"/>
+                        <polygon points="250,140 370,180 250,220 130,180" fill="#d4af37"/>
+                        <path d="M250,200 C240,170 210,140 160,110 C210,130 230,160 240,190 Z" fill="#ffffff"/>
+                        <path d="M250,200 C260,170 290,140 340,110 C290,130 270,160 260,190 Z" fill="#ffffff"/>
+                        <path d="M220,210 C230,240 240,310 250,350 C260,310 270,240 280,210 Z" fill="#ffffff"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-base sm:text-lg font-black tracking-wider text-white">PHOENIX CENTER</h1>
+                    <p class="text-[10px] text-[#e0a96d] font-bold uppercase tracking-widest">Science & Training</p>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 space-x-reverse text-sm font-semibold text-slate-300">
+                <a href="#services" class="hover:text-[#e0a96d] transition">التخصصات والخدمات</a>
+                <a href="#info" class="hover:text-[#e0a96d] transition">معلومات المركز</a>
+                <a href="#register" class="bg-[#d4af37] hover:bg-[#c29b30] text-[#0b1724] px-5 py-2.5 rounded-xl font-black transition shadow-md">سجل الآن</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen bg-[#0b1724] flex items-center justify-center pt-28 pb-20 px-4 overflow-hidden">
+        <!-- Ambient Background Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#d4af37]/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 text-[#e0a96d] px-4 py-2 rounded-full text-xs font-bold mb-6 backdrop-blur-md">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>الصومعة، ولاية البليدة - التسجيلات مفتوحة لكافة الفئات</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-tight text-white">
+                بوابتك نحو الاحتراف مع <span class="text-[#e0a96d]">مركز فينيكس</span>
+            </h1>
+
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+                نقدم باقة متكاملة من دورات اللغات، الدعم المدرسي، التكوين المهني، والخدمات المكتبية والقانونية برؤية حديثة.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#register" class="w-full sm:w-auto bg-[#d4af37] hover:bg-[#c29b30] text-[#0b1724] font-black px-8 py-4 rounded-2xl shadow-lg transition transform hover:-scale-105">
+                    <i class="fa-solid fa-pen-to-square ml-2"></i> احجز مقعدك الآن
+                </a>
+                <a href="tel:0561324563" class="w-full sm:w-auto brand-bg-card hover:bg-[#182c45] text-white font-bold px-8 py-4 rounded-2xl transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone text-[#e0a96d]"></i> 0561 32 45 63
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Center Info Bar -->
+    <section id="info" class="brand-bg-card border-y border-white/10 py-6">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-right">
+            <div class="flex items-center justify-center md:justify-start space-x-4 space-x-reverse">
+                <div class="w-12 h-12 bg-white/5 text-[#e0a96d] rounded-2xl flex items-center justify-center text-xl shrink-0 border border-white/10"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                    <h4 class="text-xs text-slate-400 font-bold">موقع المركز</h4>
+                    <p class="text-sm font-bold text-white">الصومعة، شارع المجاهد علي قادة، البليدة</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center md:justify-start space-x-4 space-x-reverse">
+                <div class="w-12 h-12 bg-white/5 text-[#e0a96d] rounded-2xl flex items-center justify-center text-xl shrink-0 border border-white/10"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                    <h4 class="text-xs text-slate-400 font-bold">رقم الهاتف الرسمي</h4>
+                    <p class="text-sm font-bold text-white" dir="ltr">0561 32 45 63</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center md:justify-start space-x-4 space-x-reverse">
+                <div class="w-12 h-12 bg-white/5 text-[#e0a96d] rounded-2xl flex items-center justify-center text-xl shrink-0 border border-white/10"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                    <h4 class="text-xs text-slate-400 font-bold">البريد الإلكتروني</h4>
+                    <p class="text-sm font-bold text-white truncate max-w-[200px]">academyphoenix960@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Specialties Grid -->
+    <section id="services" class="py-24 bg-[#0d1b2a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black mb-4 text-white">تخصصات وخدمات مركز فينيكس سنتر</h2>
+                <p class="text-slate-400 text-sm">دورات وبرامج مصممة خصيصاً لتطوير المهارات وضمان التفوق</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 1 -->
+                <div class="brand-bg-card p-8 rounded-3xl hover:border-[#d4af37]/50 transition group">
+                    <div class="w-14 h-14 bg-white/5 border border-white/10 text-[#e0a96d] rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-[#d4af37] group-hover:text-[#0b1724] transition">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">دروس الدعم المدرسي</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">مرافقة بيداغوجية شاملة لكافة الأطوار التعليمية لضمان النجاح.</p>
+                </div>
+
+                <!-- 2 -->
+                <div class="brand-bg-card p-8 rounded-3xl hover:border-[#d4af37]/50 transition group">
+                    <div class="w-14 h-14 bg-white/5 border border-white/10 text-[#e0a96d] rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-[#d4af37] group-hover:text-[#0b1724] transition">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">تعليم اللغات ونادي الإنجليزية</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">دورات احترافية في اللغات الأجنبية موجهة للصغار والكبار.</p>
+                </div>
+
+                <!-- 3 -->
+                <div class="brand-bg-card p-8 rounded-3xl hover:border-[#d4af37]/50 transition group">
+                    <div class="w-14 h-14 bg-white/5 border border-white/10 text-[#e0a96d] rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-[#d4af37] group-hover:text-[#0b1724] transition">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">تحسين الخط والقراءة</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">برامج خاصة لتصحيح الخطوط وتعزيز الطلاقة اللغوية.</p>
+                </div>
+
+                <!-- 4 -->
+                <div class="brand-bg-card p-8 rounded-3xl hover:border-[#d4af37]/50 transition group">
+                    <div class="w-14 h-14 bg-white/5 border border-white/10 text-[#e0a96d] rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-[#d4af37] group-hover:text-[#0b1724] transition">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">روضة الأطفال وصناعة المحتوى</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">رعاية تربوية وورشات ابتكارية مبكرة لتنمية الذكاء.</p>
+                </div>
+
+                <!-- 5 -->
+                <div class="brand-bg-card p-8 rounded-3xl hover:border-[#d4af37]/50 transition group">
+                    <div class="w-14 h-14 bg-white/5 border border-white/10 text-[#e0a96d] rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-[#d4af37] group-hover:text-[#0b1724] transition">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">تعليم الإعلام الآلي والتطبيقات</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">دورات تكوينية تكنولوجية لمواكبة العصر الرقمي.</p>
+                </div>
+
+                <!-- 6 -->
+                <div class="brand-bg-card p-8 rounded-3xl hover:border-[#d4af37]/50 transition group">
+                    <div class="w-14 h-14 bg-white/5 border border-white/10 text-[#e0a96d] rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-[#d4af37] group-hover:text-[#0b1724] transition">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">المستشار القانوني للمؤسسات</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">برامج تدريبية متقدمة للمهنيين والمؤسسات في الصياغة القانونية.</p>
+                </div>
+
+                <!-- 7 -->
+                <div class="brand-bg-card p-8 rounded-3xl hover:border-[#d4af37]/50 transition group">
+                    <div class="w-14 h-14 bg-white/5 border border-white/10 text-[#e0a96d] rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-[#d4af37] group-hover:text-[#0b1724] transition">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">كاتب عمومي وسكرتارية</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">تكوين تطبيقي في أعمال السكرتارية والخدمات الإدارية.</p>
+                </div>
+
+                <!-- 8 -->
+                <div class="brand-bg-card p-8 rounded-3xl hover:border-[#d4af37]/50 transition group lg:col-span-2">
+                    <div class="w-14 h-14 bg-white/5 border border-white/10 text-[#e0a96d] rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-[#d4af37] group-hover:text-[#0b1724] transition">
+                        <i class="fa-solid fa-print"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">الخدمات المكتبية والاستشارات الأكاديمية</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">تقديم مختلف الاستشارات الأكاديمية والمهنية وتوفير الخدمات المكتبية المتكاملة للطلاب والمؤسسات بإشراف مختصين.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-24 brand-bg-dark border-t border-white/10">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="brand-bg-card p-8 sm:p-12 rounded-3xl shadow-2xl relative overflow-hidden border border-[#d4af37]/20">
+                <div class="text-center mb-10">
+                    <span class="bg-[#d4af37]/10 text-[#e0a96d] border border-[#d4af37]/30 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">استمارة الحجز والتسجيل</span>
+                    <h2 class="text-3xl font-black mt-3 mb-2 text-white">سجل بياناتك الآن وسنتصل بك قريباً</h2>
+                    <p class="text-slate-400 text-sm">مركز فينيكس سنتر - الصومعة، البليدة</p>
+                </div>
+
+                <!-- Success Alert -->
+                <div id="successBox" class="hidden mb-6 p-4 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 rounded-2xl text-center">
+                    <i class="fa-solid fa-circle-check text-2xl mb-1"></i>
+                    <h4 class="font-bold text-base">تم إرسال طلب تسجيلك بنجاح!</h4>
+                    <p class="text-xs text-emerald-300 mt-1">شكراً لثقتك بنا. سيتصل بك فريق الإدارة على الرقم المدخل قريباً.</p>
+                </div>
+
+                <form id="regForm" onsubmit="handleRegistration(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-300 mb-2">الاسم واللقب <span class="text-[#e0a96d]">*</span></label>
+                            <input type="text" id="fullName" required class="w-full bg-[#0b1724] border border-slate-700 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#d4af37] text-white transition" placeholder="مثال: أمين بن عيسى">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-300 mb-2">رقم الهاتف <span class="text-[#e0a96d]">*</span></label>
+                            <input type="tel" id="phoneNumber" required class="w-full bg-[#0b1724] border border-slate-700 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#d4af37] text-white transition" placeholder="0561324563" dir="ltr">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-300 mb-2">الفئة العمرية <span class="text-[#e0a96d]">*</span></label>
+                            <select id="ageGroup" required class="w-full bg-[#0b1724] border border-slate-700 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#d4af37] text-white transition">
+                                <option value="">اختر الفئة العمرية...</option>
+                                <option value="أطفال (روضة وتلاميذ ابتدائي)">أطفال (روضة وتلاميذ ابتدائي)</option>
+                                <option value="مراهقون (متوسط وثانوي)">مراهقون (متوسط وثانوي)</option>
+                                <option value="شباب وطلاب">شباب وطلاب</option>
+                                <option value="مهنيون وبالغون">مهنيون وبالغون</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-300 mb-2">التخصص أو الخدمة المطلوبة <span class="text-[#e0a96d]">*</span></label>
+                            <select id="specialtyChoice" required class="w-full bg-[#0b1724] border border-slate-700 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#d4af37] text-white transition">
+                                <option value="">اختر التخصص أو الخدمة...</option>
+                                <option value="دروس الدعم المدرسي">دروس الدعم المدرسي</option>
+                                <option value="تعليم اللغات الأجنبية">تعليم اللغات الأجنبية</option>
+                                <option value="تحسين مستوى الخط والقراءة">تحسين مستوى الخط والقراءة</option>
+                                <option value="روضة الأطفال وصناعة المحتوى">روضة الأطفال وصناعة المحتوى</option>
+                                <option value="تعليم الإعلام الآلي">تعليم الإعلام الآلي</option>
+                                <option value="المستشار القانوني للمؤسسات">المستشار القانوني للمؤسسات</option>
+                                <option value="كاتب عمومي وسكرتارية">كاتب عمومي وسكرتارية</option>
+                                <option value="خدمات مكتبية واستشارات">خدمات مكتبية واستشارات</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-slate-300 mb-2">ملاحظات أو استفسار إضافي (اختياري)</label>
+                        <textarea id="notes" rows="3" class="w-full bg-[#0b1724] border border-slate-700 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#d4af37] text-white transition" placeholder="اكتب وقت الحصة المفضل أو أي استفسار..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-[#d4af37] hover:bg-[#c29b30] text-[#0b1724] font-black py-4 rounded-xl shadow-lg transition text-base">
+                        <i class="fa-solid fa-paper-plane ml-2"></i> إرسال طلب التسجيل الفوري
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#080f18] py-8 border-t border-white/10 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="font-bold text-slate-300 mb-1">مركز فينيكس سنتر للتدريب والعلوم - الصومعة، البليدة</p>
+            <p>جميع الحقوق محفوظة © 2026 | الهاتف: 0561324563</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleRegistration(event) {
+            event.preventDefault();
+            document.getElementById('successBox').classList.remove('hidden');
+            document.getElementById('regForm').reset();
+            document.getElementById('successBox').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
+```eof
